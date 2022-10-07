@@ -3,7 +3,7 @@ Script created to update Intera service
 
 ## EndPoints
 
-  `GET` **/jobs/{squad}**:
+  `GET` **/jobs/{:squad}**:
 Get jobs by squad name.
 
   `POST` **/jobs/{updateSquads}**: 
