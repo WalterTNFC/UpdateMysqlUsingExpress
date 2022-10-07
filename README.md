@@ -3,15 +3,12 @@ Script created to update Intera service
 
 ## EndPoints
 
-GET` **/jobs/{squad}**
-
+  `GET` **/jobs/{squad}**:
 Get jobs by squad name.
 
-POST` **/jobs/{updateSquads}**
-
+  `POST` **/jobs/{updateSquads}**: 
 Update all jobs squads names reading Json.
 
-POST` **/jobs/{updatePipefyId}**
-
+  `POST` **/jobs/{updatePipefyId}**: 
 Update all PipefyIs reading Json.
 
