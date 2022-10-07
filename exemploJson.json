@@ -1,0 +1,16 @@
+[
+  {
+    "id": 9999,
+    "nm_vaga": "Nome da vaga",
+    "cliente": "Nome do cliente",
+    "SQUAD ANTIGO": "Squad Antingo",
+    "squad": "Squad Novo"
+  },
+  {
+    "id": 10000,
+    "nm_vaga": "Nome da vaga",
+    "cliente": "Nome do cliente",
+    "SQUAD ANTIGO": "Squad Antingo",
+    "squad": "Squad Novo"
+  }
+]
