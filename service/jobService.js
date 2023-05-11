@@ -27,8 +27,29 @@ async function updatePipeIdFromJson() {
     return { code: 400, error: e };
   }
 }
+
+async function updateJobDivertity() {
+  try {
+    const jobsUpdated = await jobModel.updateJobDivertity();
+    return { code: 200, data: jobsUpdated };
+  } catch (e) {
+    return { code: 400, error: e };
+  }
+}
+
+async function updateTA() {
+  try {
+    const jobstToUpdate =  await jobModel.updateTA();
+    return { code: 200, data: jobstToUpdate}
+  } catch (e) {
+    return { code: 400, error: e}
+  }
+}
+
 module.exports = {
   getJobsBySquad,
   updateSquadNameFromJson,
   updatePipeIdFromJson,
+  updateJobDivertity,
+  updateTA,
 };

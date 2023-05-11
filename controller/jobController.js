@@ -29,8 +29,29 @@ async function updatePipeIdFromJson(_req, res) {
   return res.status(code).json(data);
 }
 
+
+async function updateJobDivertity(_req, res) {
+  const { error, code, data } = await jobService.updateJobDivertity();
+
+  if (error) {
+    return res.status(error.code).json({ message: error.message });
+  }
+  return res.status(code).json(data);
+}
+
+async function updateTA(_req, res) {
+  const { erro, code, data } = await jobService.updateTA();
+
+  if (error) {
+    return res.status(error.code).json({ message: error.message });
+  }
+  return res.status(code).json(data);
+}
+
 module.exports = {
   getJobsBySquad,
   updateSquadNameFromJson,
   updatePipeIdFromJson,
+  updateJobDivertity,
+  updateTA,
 };
